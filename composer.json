@@ -1,0 +1,19 @@
+{
+    "name": "spar/slack-geo",
+    "description": "Geofencing time-limited public Slack channel access",
+    "authors": [
+        {
+            "name": "Erin Sparling",
+            "email": "erin@everyplace.net"
+        }
+    ],
+    "repositories":[
+      {
+        "url":"https://github.com/palanik/slack-php.git",
+        "type":"git"
+      }
+    ],
+    "require": {
+      "wrapi/slack":"*"
+    }
+}
