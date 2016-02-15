@@ -10,10 +10,15 @@ function parseEnv($environmental_variables) {
   return $envsObj;
 }
 
-$auth = ($_SERVER['AUTH']) ? $_SERVER['AUTH'] : parseEnv('.env');
-
+// $auth = ($_SERVER['AUTH']) ? $_SERVER['AUTH'] : parseEnv('.env')->auth;
+$auth = "xoxp-19250642657-19248205763-19260270998-b847394f84";
+echo $auth;
 $autoloader = require __DIR__ . '/vendor/autoload.php';
 
-print_r($autoloader->getPrefixesPsr4());
+require __DIR__ . '/vendor/wrapi/slack/src/slack.php';
+// print_r($autoloader->getPrefixesPsr4());
 
 $client = new wrapi\slack($auth);
+$test = $client->emoji->list();
+
+print_r($test);
