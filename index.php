@@ -26,4 +26,3 @@ $test = $client->emoji->list();
 
 $bowtie = $test['emoji']['bowtie'];
 echo "<img src=".$bowtie." />";
- 
